@@ -1,0 +1,23 @@
+{% extends 'blog_app/base.html' %}
+
+{% block title %}All Authors{% endblock %}
+
+{% block content %}
+    <h2>🧑‍💻 All Authors</h2>
+    <div class="row">
+        {% for author in authors %}
+            <div class="col-md-4">
+                <div class="card text-center mb-4 shadow-sm">
+                    {% if author.profile.image %}
+                        <img src="{{ author.profile.image.url }}" class="card-img-top mx-auto" style="max-height: 150px; width: auto;">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5>{{ author.username }}</h5>
+                        <a href="{% url 'public_profile' author.username %}" class="btn btn-outline-primary btn-sm">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

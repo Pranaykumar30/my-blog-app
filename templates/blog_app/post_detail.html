@@ -1,0 +1,19 @@
+{% extends 'blog_app/base.html' %}
+
+{% block title %}{{ post.title }} | My Blog{% endblock %}
+
+{% block content %}
+    {% if post.image %}
+        <img src="{{ post.image.url }}" class="img-fluid mb-3" alt="{{ post.title }}">
+    {% endif %}
+
+    <h2 class="mb-3">{{ post.title }}</h2>
+    <p class="text-muted">{{ post.date_posted }}</p>
+    <p>{{ post.content|linebreaks }}</p>
+    <p class="text-muted">By <a href="{% url 'public_profile' post.author.username %}">{{ post.author.username }}</a> on {{ post.date_posted }}</p>
+
+
+    <a href="{% url 'edit_post' post.id %}" class="btn btn-outline-primary">✏️ Edit</a>
+    <a href="{% url 'delete_post' post.id %}" class="btn btn-outline-danger ms-2">🗑️ Delete</a><br>
+    <a href="/" class="btn btn-secondary mt-3">← Back to Home</a>
+{% endblock %}

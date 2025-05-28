@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.pot
+*.mo
+*.sqlite3
+db.sqlite3
+.env
+media/
+staticfiles/
+blogenv/           # Your virtual environment folder (name may vary)
+venv/
+.envrc
+*.env
+.DS_Store

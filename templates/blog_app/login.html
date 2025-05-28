@@ -1,0 +1,15 @@
+{% extends 'blog_app/base.html' %}
+
+{% block title %}Login | My Blog{% endblock %}
+
+{% block content %}
+    <div class="card mx-auto shadow-sm p-4" style="max-width: 500px;">
+        <h3 class="mb-3">LOGIN</h3>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-success">Login</button>
+        </form>
+    </div>
+
+{% endblock %}

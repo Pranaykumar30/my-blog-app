@@ -1,0 +1,47 @@
+{% extends 'blog_app/base.html' %}
+
+{% block title %}My Profile{% endblock %}
+
+{% block content %}
+    {% if profile.image %}
+    <img src="{{ profile.image.url }}" alt="Profile Picture" class="img-thumbnail mb-3" style="max-width: 150px;">
+    {% endif %}
+
+
+
+    <h2> {{ user_profile.username }}'s Profile</h2>
+    <p><strong>Email:</strong> {{ user_profile.email }}</p>
+    <p><strong>Joined:</strong> {{ user_profile.date_joined }}</p>
+
+    <hr>
+    <h3>Your Blog Posts ({{ posts.count }})</h3>
+
+    {% for post in posts %}
+        <div class="card mb-4 shadow-sm">
+            {% if post.image %}
+                <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.title }}">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p class="card-text text-muted mb-1">By <a href="{% url 'public_profile' post.author.username %}">{{ post.author.username }}</a> | {{ post.date_posted }}</p>
+                <p class="card-text">{{ post.content|truncatewords:25 }}</p>
+                <a href="{% url 'post_detail' post.id %}" class="btn btn-sm btn-primary">Read More</a>
+            </div>
+        </div>
+
+    {% empty %}
+        <p>You haven't written any blog posts yet.</p>
+    {% endfor %}
+    <div class="card mx-auto shadow-sm p-4" style="max-width: 500px;">
+        <h3 class="mb-3">Edit Profile Info</h3>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ user_form.as_p }}
+            {{ image_form.as_p }}
+            <button type="submit" class="btn btn-success">Save Changes</button>
+        </form>
+    </div>
+
+
+    <a href="/" class="btn btn-secondary mt-3">← Back to Home</a>
+{% endblock %}

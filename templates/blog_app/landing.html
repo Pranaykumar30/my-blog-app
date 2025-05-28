@@ -1,0 +1,21 @@
+{% extends 'blog_app/base.html' %}
+
+{% block title %}Welcome | My Blog{% endblock %}
+
+{% block content %}
+<div class="text-center py-5">
+    <h1 class="display-4 fw-bold mb-4">✍️ Welcome to <span class="text-primary">My Blog</span></h1>
+    <p class="lead text-muted mb-4">
+        A space to express your thoughts, share your stories, and read what others are saying.
+    </p>
+
+    <img src="https://img.freepik.com/premium-vector/customizable-outline-illustration-blogger_203633-11782.jpg?w=2000"
+         class="img-fluid rounded shadow mb-4"
+         alt="Blog illustration" style="max-height: 400px;">
+
+    <div class="d-flex justify-content-center gap-3">
+        <a href="{% url 'login' %}" class="btn btn-outline-primary btn-lg px-4">Login</a>
+        <a href="{% url 'register' %}" class="btn btn-success btn-lg px-4">Register</a>
+    </div>
+</div>
+{% endblock %}
