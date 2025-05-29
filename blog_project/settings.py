@@ -28,12 +28,12 @@ environ.Env.read_env(env_path)
 print("ENV DEBUG:", os.path.isfile(os.path.join(BASE_DIR, '.env')))
 print("ENV SECRET_KEY:", env('SECRET_KEY', default='NOT_FOUND'))
 
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = env('SECRET_KEY', , default="unsafe-key")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DEBUG', default=False)
 
-ALLOWED_HOSTS = ['.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=["127.0.0.1", "localhost"])
 
 
 # Application definition
