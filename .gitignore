@@ -7,6 +7,7 @@ __pycache__/
 *.sqlite3
 db.sqlite3
 .env
+media/
 staticfiles/
 blogenv/           # Your virtual environment folder (name may vary)
 venv/
