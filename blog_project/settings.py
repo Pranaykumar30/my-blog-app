@@ -28,7 +28,7 @@ environ.Env.read_env(env_path)
 print("ENV DEBUG:", os.path.isfile(os.path.join(BASE_DIR, '.env')))
 print("ENV SECRET_KEY:", env('SECRET_KEY', default='NOT_FOUND'))
 
-SECRET_KEY = env('SECRET_KEY', , default="unsafe-key")
+SECRET_KEY = env('SECRET_KEY', default="unsafe-key")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DEBUG', default=False)
