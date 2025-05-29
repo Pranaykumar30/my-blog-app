@@ -12,5 +12,5 @@ staticfiles/
 blogenv/           # Your virtual environment folder (name may vary)
 venv/
 .envrc
-*.env
+
 .DS_Store
