@@ -127,6 +127,11 @@ def profile(request):
             image_form.save()
             messages.success(request, "Profile updated successfully.")
             return redirect('profile')
+    elif 'image_update' in request.POST:
+        image_form = ProfileImageForm(request.POST, request.FILES, instance=request.user.profile)
+        if image_form.is_valid():
+            image_form.save()
+
     else:
         user_form = UserUpdateForm(instance=request.user)
         image_form = ProfileImageForm(instance=request.user.profile)
