@@ -1,17 +1,9 @@
-Awesome! 🎯 Let’s now add:
 
-* 📸 A **screenshots section**
-* 🌐 A **Live Demo link**
-* 🙋‍♂️ Your **name in the credits**
-
----
-
-## 📄 UPDATED `README.md` (Copy & Paste This)
 
 ````markdown
 # 📝 My Blog - Django Web Application
 
-A fully functional blog web app built using Django. Users can register, log in, create blog posts, edit their profile, and browse content by other users.
+A fully functional blog web app built using Django. Users can register, log in, create blog posts, edit their profiles, and browse content by other users.
 
 ---
 
@@ -29,9 +21,7 @@ A fully functional blog web app built using Django. Users can register, log in, 
 
 ## 🌐 Live Demo
 
-👉 [View Live App](https://your-app.vercel.app)
-
-> Replace the above link with your actual Vercel/Render deployment URL.
+👉 [View Live App](https://my-blog-app-patr.onrender.com)
 
 ---
 
@@ -41,7 +31,7 @@ A fully functional blog web app built using Django. Users can register, log in, 
 - **Frontend:** HTML5, CSS3, Bootstrap 5
 - **Database:** SQLite (can be swapped with PostgreSQL)
 - **Storage:** Django Media & Static file management
-- **Deployment:** [Render](https://render.com) / [Vercel](https://vercel.com)
+- **Deployment:** [Render](https://render.com)
 
 ---
 
@@ -50,7 +40,7 @@ A fully functional blog web app built using Django. Users can register, log in, 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/my-blog-app.git
+git clone 
 cd my-blog-app
 ````
 
@@ -86,7 +76,7 @@ Create a superuser for admin login:
 python manage.py createsuperuser
 ```
 
-Login at: `/admin/`
+Log in at: `/admin/`
 
 ---
 
@@ -126,24 +116,8 @@ Thanks to Django, Bootstrap, and the open-source community 💙
 
 ## 👤 Author
 
-**Your Name**
+**Yellanuru Madasi Pranay Kumar**
 [GitHub](https://github.com/YOUR_USERNAME)
 
 ```
-
----
-
-## ✅ Final To-Dos:
-
-1. Add real screenshots to a `screenshots/` folder in your repo.
-2. Replace the `https://your-app.vercel.app` with your actual **live site link**.
-3. Change **Your Name** and GitHub URL in the credits.
-
----
-
-Let me know once your README is in — and we’ll move to:
-
-### 🚀 PART 2: Deploying on Vercel (Serverless Django)
-
-Ready to go?
 ```
