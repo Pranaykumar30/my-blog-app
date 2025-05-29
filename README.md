@@ -1,10 +1,7 @@
-
-
-````markdown
 # 📝 My Blog - Django Web Application
 
-A fully functional blog web app built using Django. Users can register, log in, create blog posts, edit their profiles, and browse content by other users.
-
+- A fully functional web blog app was built using Django. 
+- Users can register, log in, create blog posts, edit their profiles, and browse content by other users.
 ---
 
 ## 🚀 Features
@@ -23,6 +20,7 @@ A fully functional blog web app built using Django. Users can register, log in, 
 
 👉 [View Live App](https://my-blog-app-patr.onrender.com)
 
+
 ---
 
 ## 💻 Tech Stack
@@ -31,7 +29,7 @@ A fully functional blog web app built using Django. Users can register, log in, 
 - **Frontend:** HTML5, CSS3, Bootstrap 5
 - **Database:** SQLite (can be swapped with PostgreSQL)
 - **Storage:** Django Media & Static file management
-- **Deployment:** [Render](https://render.com)
+- **Deployment:** [Render](https://render.com) / [Vercel](https://vercel.com)
 
 ---
 
@@ -40,9 +38,9 @@ A fully functional blog web app built using Django. Users can register, log in, 
 ### 1. Clone the Repository
 
 ```bash
-git clone 
+git clone https://github.com/YOUR_USERNAME/my-blog-app.git
 cd my-blog-app
-````
+```
 
 ### 2. Create a Virtual Environment
 
@@ -82,7 +80,6 @@ Log in at: `/admin/`
 
 ## 📸 Screenshots
 
-> Replace `image.png` with your actual file names or uploaded GitHub image URLs.
 
 ### 🏠 Homepage
 
@@ -119,5 +116,3 @@ Thanks to Django, Bootstrap, and the open-source community 💙
 **Yellanuru Madasi Pranay Kumar**
 [GitHub](https://github.com/YOUR_USERNAME)
 
-```
-```
