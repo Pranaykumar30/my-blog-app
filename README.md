@@ -29,7 +29,7 @@
 - **Frontend:** HTML5, CSS3, Bootstrap 5
 - **Database:** SQLite (can be swapped with PostgreSQL)
 - **Storage:** Django Media & Static file management
-- **Deployment:** [Render](https://render.com) / [Vercel](https://vercel.com)
+- **Deployment:** [Render](https://render.com)
 
 ---
 
@@ -38,7 +38,7 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/my-blog-app.git
+git clone https://github.com/Pranaykumar30/my-blog-app.git
 cd my-blog-app
 ```
 
@@ -83,19 +83,19 @@ Log in at: `/admin/`
 
 ### 🏠 Homepage
 
-![Homepage](screenshots/home.png)
+![Homepage](ScreenShots/home.png)
 
 ### 👤 User Profile
 
-![Profile Page](screenshots/profile.png)
+![Profile Page](ScreenShots/user_profile.png)
 
 ### 📝 Create Blog Post
 
-![New Post](screenshots/new_post.png)
+![New Post](ScreenShots/create_post.png)
 
 ### 🌐 Public Profile
 
-![Public Profile](screenshots/public_profile.png)
+![Public Profile](ScreenShots/public_profiles.png)
 
 ---
 
@@ -114,5 +114,5 @@ Thanks to Django, Bootstrap, and the open-source community 💙
 ## 👤 Author
 
 **Yellanuru Madasi Pranay Kumar**
-[GitHub](https://github.com/YOUR_USERNAME)
+[GitHub](https://github.com/Pranaykumar30)
 
